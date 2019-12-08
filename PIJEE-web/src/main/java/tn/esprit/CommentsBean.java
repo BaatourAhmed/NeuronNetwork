@@ -16,7 +16,7 @@ import services.CommentService;
 @ViewScoped
 public class CommentsBean {
 	
-	
+	     
 	
 	@EJB
 	CommentService service;
@@ -28,7 +28,7 @@ public class CommentsBean {
 	private List<Comment> comments;
 	
 
-	
+	        
 	public void addComment(){
 		System.out.println("**********************************************");
 		Comment cm = new Comment(comment,date);
@@ -76,6 +76,6 @@ public class CommentsBean {
 		this.comments = comments;
 	}
 	
-	
+	     
 
 }
