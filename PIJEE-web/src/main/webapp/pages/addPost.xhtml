@@ -8,7 +8,7 @@
 
 		<h:form id="form">
 
-
+                                             
 			<h1 class="text-primary">Ajouter Post</h1>
 
 			<h:outputText value="titre" />
@@ -17,7 +17,7 @@
 				<h:inputText value="#{postBean.title}" class="form-control"
 					placeholder="titre" />
 			</div>
-
+                            
 			<h:outputText value="Description">
 			</h:outputText>
 			<div class="form-group">
@@ -25,7 +25,7 @@
 					placeholder="Description" />
 			</div>
 
-
+                                                               
 			<div class="col-xs-3">
 				<p:calendar id="popup" value="#{postBean.date}"
 					placeholder="Choisir date" />
@@ -33,7 +33,7 @@
 
 			<br />
 			<br />
-
+                            
 			<div class="form-group mt-30">
 				<h:commandButton id="btn1" action="#{postBean.addPost()}"
 					value="Ajouter" class="btn btn-primary"></h:commandButton>
@@ -41,7 +41,7 @@
 			
 		 <a href="http://localhost:18080/PIJEE-web/pages/Posts.jsf" class="btn btn-success">Retour à la liste</a>
 			
-
+                                   
 
 			<h:message for="btn1" />
 
