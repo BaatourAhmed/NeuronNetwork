@@ -33,16 +33,16 @@ public class PostBean {
 	private String description;
 	
 	private String image;
-	
+	 
 
 	private String category;
-	
+	 
 
 	private Date date;
 	
 
 	private List<Post> Posts;
-	
+	 
 	
 
 
@@ -71,7 +71,7 @@ public class PostBean {
 	}
 	
 		
-	
+	  
 	
 	
 	
