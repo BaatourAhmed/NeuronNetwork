@@ -7,17 +7,17 @@ import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
-
+               
 import entity.Comment;
-
+                        
 import services.CommentService;
 
 @ManagedBean
 @ViewScoped
 public class CommentsBean {
 	
-	          
-	
+	                         
+	             
 	@EJB
 	CommentService service;
 	
@@ -55,7 +55,7 @@ public class CommentsBean {
 	public void setId_user(int id_user) {
 		this.id_user = id_user;
 	}
-
+             
 	public String getComment() {
 		return comment;
 	}
