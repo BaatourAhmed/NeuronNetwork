@@ -18,7 +18,7 @@ import services.PostService;
 @ManagedBean
 @ViewScoped
 public class PostBean {
-	
+	                                                          
 	@EJB
 	PostService service;
 	
@@ -50,7 +50,7 @@ public class PostBean {
 	public String goToAddPostsPage(){
 		return "/PIJEE-web/pages/addPost.jsf";
 	}
-	
+	                                        
 
 	public int yaa(){
 		String value = FacesContext.getCurrentInstance().
@@ -60,7 +60,7 @@ public class PostBean {
 		return clieckedPostId; 
 	}
 
-	
+	                                  
 	public String goToComments(){
 
 		String value = FacesContext.getCurrentInstance().
@@ -69,7 +69,8 @@ public class PostBean {
 		System.out.println("****************" + value);
 		return "/PIJEE-web/pages/Listcommantaires.jsf";	
 	}
-	
+	                                            
+	                                      
 		
 	  
 	
@@ -130,7 +131,7 @@ public class PostBean {
 	}
 
 
-
+                  
 	public Date getDate() {
 		return date;
 	}
