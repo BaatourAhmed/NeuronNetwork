@@ -8,7 +8,7 @@
 
 <h:form name ="f">
 <h1>Liste des posts</h1>
-
+    
 		<ul class="list-group">
 			 <c:forEach var="post" items="#{postBean.posts}">
 				   <div class="container">
@@ -25,7 +25,7 @@
 											<h:outputText value="Date" />
 										</f:facet>
 										
-										
+										     
 								<h:outputText value="Date #{post.date}" > 
 								<f:convertDateTime pattern="dd.MM.yyyy"/>
 								</h:outputText>
@@ -40,7 +40,7 @@
 								<a href="http://localhost:18080/PIJEE-web/pages/Listcommantaires.jsf" class="btn btn-success">Afficher</a>
 								
 								
-								
+								      
 							</div>
 						</div>
 
@@ -57,7 +57,7 @@
 <input type="hidden" value="#{postBean.clieckedPostId}" id="bacon" name ="bacon" />
 
 
-	
+	          
  
 </h:form >
 	</ui:define>
@@ -77,11 +77,11 @@
 					var aa =  '#{postBean.yaa()}';
 					alert(aa);
 
-				
+				      
 			
                     document.getElementById("e").innerHTML="this is "+i+ " !";
                    
-                    
+                           
                 }
             </script>
 	</ui:define>
