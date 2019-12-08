@@ -1,5 +1,5 @@
 package tn.esprit;
-
+   
 import java.util.Date;
 import java.util.List;
 
@@ -16,7 +16,7 @@ import services.CommentService;
 @ViewScoped
 public class CommentsBean {
 	
-	     
+	          
 	
 	@EJB
 	CommentService service;
@@ -27,7 +27,7 @@ public class CommentsBean {
 	private Date date;
 	private List<Comment> comments;
 	
-
+     
 	        
 	public void addComment(){
 		System.out.println("**********************************************");
@@ -77,5 +77,5 @@ public class CommentsBean {
 	}
 	
 	     
-
+  
 }
