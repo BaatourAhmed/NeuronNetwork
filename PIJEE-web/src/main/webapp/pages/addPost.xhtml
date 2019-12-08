@@ -1,0 +1,52 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:p="http://primefaces.org/ui" template="/pages/index.xhtml">
+	<ui:define name="add">
+
+		<h:form id="form">
+
+
+			<h1 class="text-primary">Ajouter Post</h1>
+
+			<h:outputText value="titre" />
+
+			<div class="form-group">
+				<h:inputText value="#{postBean.title}" class="form-control"
+					placeholder="titre" />
+			</div>
+
+			<h:outputText value="Description">
+			</h:outputText>
+			<div class="form-group">
+				<h:inputText value="#{postBean.description}" class="form-control"
+					placeholder="Description" />
+			</div>
+
+
+			<div class="col-xs-3">
+				<p:calendar id="popup" value="#{postBean.date}"
+					placeholder="Choisir date" />
+			</div>
+
+			<br />
+			<br />
+
+			<div class="form-group mt-30">
+				<h:commandButton id="btn1" action="#{postBean.addPost()}"
+					value="Ajouter" class="btn btn-primary"></h:commandButton>
+			</div>
+			
+		 <a href="http://localhost:18080/PIJEE-web/pages/Posts.jsf" class="btn btn-success">Retour à la liste</a>
+			
+
+
+			<h:message for="btn1" />
+
+
+		</h:form>
+
+	</ui:define>
+</ui:composition>

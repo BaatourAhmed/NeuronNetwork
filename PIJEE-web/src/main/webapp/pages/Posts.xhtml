@@ -1,0 +1,88 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:p="http://primefaces.org/ui" template="/pages/index.xhtml">
+	<ui:define name="add">
+
+<h:form name ="f">
+<h1>Liste des posts</h1>
+
+		<ul class="list-group">
+			<c:forEach var="post" items="#{postBean.posts}">
+				<div class="container">
+
+					<li class="list-group-item">
+
+						<div class="card" style="width: 18rem;">
+							<img src="..." class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h3 class="card-title">#{post.title}</h3>
+								
+								<p> 
+										<f:facet name="header">
+											<h:outputText value="Date" />
+										</f:facet>
+										
+										
+								<h:outputText value="Date #{post.date}" > 
+								<f:convertDateTime pattern="dd.MM.yyyy"/>
+								</h:outputText>
+								</p>
+								
+								
+								<p class="card-text">Description : #{post.description}</p>
+								
+							
+<!-- 							<p:commandLink onclick="wr(#{post.id})" value="Afficher" class="btn btn-success"  /><br/> -->
+<!-- 								<p id="e">fd</p> -->
+								<a href="http://localhost:18080/PIJEE-web/pages/Listcommantaires.jsf" class="btn btn-success">Afficher</a>
+								
+								
+								
+							</div>
+						</div>
+
+					</li>
+					
+				</div>
+					
+			</c:forEach>
+		</ul>
+
+
+	<a href="#{postBean.goToAddPostsPage()}" class="btn btn-success">Ajouter Post</a>
+
+<input type="hidden" value="#{postBean.clieckedPostId}" id="bacon" name ="bacon" />
+
+
+	
+ 
+</h:form >
+	</ui:define>
+	<ui:define name="scripts">
+	            <script type="text/javascript" >
+                function wr(i){
+                    alert(i);
+
+                    $('#bacon').val(i);
+
+                    
+
+                    var foo = '#{postBean.goToComments()}';
+                    alert(foo);
+
+
+					var aa =  '#{postBean.yaa()}';
+					alert(aa);
+
+					
+                    document.getElementById("e").innerHTML="this is "+i+ " !";
+                   
+                    
+                }
+            </script>
+	</ui:define>
+</ui:composition>
+
