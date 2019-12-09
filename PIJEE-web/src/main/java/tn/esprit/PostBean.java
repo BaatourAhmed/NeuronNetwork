@@ -3,7 +3,7 @@ package tn.esprit;
 import java.io.Console;
 import java.util.Date;
 import java.util.List;
-
+    
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -14,11 +14,11 @@ import javax.servlet.http.HttpServletRequest;
 
 import entity.Post;
 import services.PostService;
-
+         
 @ManagedBean
 @ViewScoped
 public class PostBean {
-	                                                          
+	                                                                   
 	@EJB
 	PostService service;
 	
@@ -34,7 +34,7 @@ public class PostBean {
 	
 	private String image;
 	 
-
+          
 	private String category;
 	 
 
