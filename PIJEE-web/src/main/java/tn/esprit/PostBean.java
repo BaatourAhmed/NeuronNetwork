@@ -3,7 +3,7 @@ package tn.esprit;
 import java.io.Console;
 import java.util.Date;
 import java.util.List;
-    
+              
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -33,7 +33,7 @@ public class PostBean {
 	private String description;
 	
 	private String image;
-	 
+	       
           
 	private String category;
 	 
@@ -157,7 +157,7 @@ public class PostBean {
 		this.service = service;
 	}
 
-
+   
 	public int getClieckedPostId() {
 		return clieckedPostId;
 	}
